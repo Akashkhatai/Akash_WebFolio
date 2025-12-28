@@ -1,10 +1,11 @@
-import Navbar from "#components/Navbar"
+import { Navbar,Welcome } from "#components"
 
 
 const App = () => {
   return (
     <>
     <Navbar/>
+    <Welcome/>
     </>
   )
 }
