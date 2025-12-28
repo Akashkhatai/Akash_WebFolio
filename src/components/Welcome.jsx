@@ -18,7 +18,7 @@ const renderText=(text,className,baseWeight=400)=>{
 };
 
 const setupTextHover=(container,type)=>{
-    if(!container)return;
+    if(!container)return()=>{};
 
     const letters=container.querySelectorAll("span");
     const {min,max,default:base}=FONT_WEIGHTS[type];
@@ -82,9 +82,9 @@ const Welcome = () => {
             </h1>
 
         <div className="small-screen">
-            <p>This is Portfolio is Designed for  Laptop/Tabled screen only.</p>
+            <p>This is Portfolio is Designed for  Laptop/Tablet screen only.</p>
         </div>
   </section>
-}
+}   
 
 export default Welcome
